@@ -14,7 +14,8 @@ public class qwertyui {
 		Connection connection  = DriverManager.getConnection(databaseURL);
 		System.out.println("Connected to access");
 		
-		String sql = "INSERT INTO db (contact, number , phone , mail) VALUES" + "('ravi' , '04573383' , '85758474784' , 'ravi@gmail.com')";
+		String sql = "INSERT INTO db (contact, number , phone , mail) VALUES" + "('ravi' , '04573383' , '85758474784' , 'ravi"
+				+@gmail.com')";
 		
 		Statement statement = connection.createStatement();
 		int rows = statement.executeUpdate(sql);
